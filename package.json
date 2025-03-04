@@ -1,0 +1,12 @@
+{
+  "name": "flight-delay-prediction",
+  "version": "1.0.0",
+  "description": "Flight Delay Prediction Web Application",
+  "scripts": {
+    "start": "servor --reload",
+    "build": "mkdir -p dist && cp -r *.html *.js *.css dist/"
+  },
+  "dependencies": {
+    "servor": "^4.0.2"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flight Delay Prediction</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="background-image"></div>
+      <div class="content">
+        <div class="left-section">
+          <h1>PREDICTION<br>OF FLIGHT<br>DELAY</h1>
+          <div id="prediction-result">
+            <p>Enter flight details to get a prediction</p>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="prediction-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="year">YEAR</label>
+                <input type="number" id="year" placeholder="Enter year" min="2000" max="2030">
+              </div>
+              <div class="form-group">
+                <label for="month">MONTH</label>
+                <input type="number" id="month" placeholder="Enter month" min="1" max="12">
+              </div>
+              <div class="form-group">
+                <label for="date">DATE</label>
+                <input type="number" id="date" placeholder="Enter date" min="1" max="31">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="airline">SELECT AN AIRLINE</label>
+              <select id="airline">
+                <option value="">Select airline</option>
+                <option value="UA">United Air Lines Inc.(UA)</option>
+                <option value="AA">American Airlines Inc.(AA)</option>
+                <option value="DL">Delta Air Lines Inc.(DL)</option>
+                <option value="WN">Southwest Airlines Co.(WN)</option>
+                <option value="B6">JetBlue Airways(B6)</option>
+                <option value="AS">Alaska Airlines Inc.(AS)</option>
+                <option value="NK">Spirit Air Lines(NK)</option>
+                <option value="F9">Frontier Airlines Inc.(F9)</option>
+              </select>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="origin">FLYING FROM</label>
+                <select id="origin">
+                  <option value="">Select origin</option>
+                  <option value="ATL">Hartsfield-Jackson Atlanta International</option>
+                  <option value="LAX">Los Angeles International</option>
+                  <option value="ORD">Chicago O'Hare International</option>
+                  <option value="DFW">Dallas/Fort Worth International</option>
+                  <option value="JFK">John F. Kennedy International</option>
+                  <option value="SFO">San Francisco International</option>
+                  <option value="EWR">Newark Liberty International</option>
+                  <option value="LAS">Harry Reid International</option>
+                  <option value="MCO">Orlando International</option>
+                  <option value="DEN">Denver International</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="destination">FLYING TO</label>
+                <select id="destination">
+                  <option value="">Select destination</option>
+                  <option value="ATL">Hartsfield-Jackson Atlanta International</option>
+                  <option value="LAX">Los Angeles International</option>
+                  <option value="ORD">Chicago O'Hare International</option>
+                  <option value="DFW">Dallas/Fort Worth International</option>
+                  <option value="JFK">John F. Kennedy International</option>
+                  <option value="SFO">San Francisco International</option>
+                  <option value="EWR">Newark Liberty International</option>
+                  <option value="LAS">Harry Reid International</option>
+                  <option value="MCO">Orlando International</option>
+                  <option value="DEN">Denver International</option>
+                </select>
+              </div>
+            </div>
+            
+            <button id="predict-button">PREDICT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
